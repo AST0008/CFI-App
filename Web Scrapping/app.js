@@ -1,5 +1,8 @@
 //fetchiing all the urls of the blogs on the homepage and storing thier links in an array
 
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+
 async function getUrl() {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
